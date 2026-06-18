@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reserve Your MANI Facility Spot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #07111f;
+      color: #f4f8ff;
+      font-family: Arial, sans-serif;
+    }
+
+    .reserve-section {
+      min-height: 100vh;
+      padding: 64px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .reserve-shell {
+      width: 100%;
+      max-width: 1360px;
+      padding: 46px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 54px;
+      border: 1px solid rgba(126, 255, 38, 0.18);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 100% 100%, rgba(93, 255, 42, 0.12), transparent 32%),
+        linear-gradient(135deg, #0b1828 0%, #050912 55%, #061106 100%);
+    }
+
+    .reserve-kicker {
+      color: #24d7ff;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      font-weight: 800;
+      margin-bottom: 34px;
+    }
+
+    h1 {
+      color: #f4f8ff;
+      font-size: clamp(44px, 5vw, 72px);
+      line-height: 0.93;
+      margin: 0 0 24px;
+      letter-spacing: -0.06em;
+    }
+
+    .reserve-description {
+      color: #bfd3ff;
+      font-size: 18px;
+      line-height: 1.55;
+      max-width: 560px;
+    }
+
+    .reserve-contact {
+      margin-top: 30px;
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .reserve-contact p {
+      margin: 10px 0;
+    }
+
+    .reserve-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .reserve-form input,
+    .reserve-form select,
+    .reserve-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(205, 225, 255, 0.16);
+      background: rgba(0, 0, 0, 0.42);
+      color: #f4f8ff;
+      border-radius: 15px;
+      padding: 16px 18px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .reserve-form input::placeholder,
+    .reserve-form textarea::placeholder {
+      color: rgba(225, 235, 255, 0.58);
+    }
+
+    .reserve-form input:focus,
+    .reserve-form select:focus,
+    .reserve-form textarea:focus {
+      border-color: #6dff35;
+      box-shadow: 0 0 0 3px rgba(109, 255, 53, 0.14);
+    }
+
+    .reserve-date-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .reserve-date-grid label {
+      color: #bfd3ff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .reserve-date-grid input {
+      margin-top: 8px;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 18px 28px;
+      background: linear-gradient(90deg, #72ff36, #31d127);
+      color: #020611;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 24px rgba(114, 255, 54, 0.32);
+    }
+
+    @media (max-width: 900px) {
+      .reserve-shell {
+        grid-template-columns: 1fr;
+        padding: 32px 22px;
+      }
+
+      .reserve-date-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="reserve-section">
+    <div class="reserve-shell">
+      <div>
+        <p class="reserve-kicker">RESERVE YOUR FACILITY'S SPOT</p>
+
+        <h1>
+          Ready to reserve<br />
+          your facility's<br />
+          MANI implementation<br />
+          spot?
+        </h1>
+
+        <p class="reserve-description">
+          Tell us about your facility, your timeline, and where your team is
+          experiencing operational fragmentation. MANI is currently onboarding a
+          limited number of facilities to ensure deployment quality.
+        </p>
+
+        <div class="reserve-contact">
+          <p>✉ mani@manufacturingautomatednetworkinterface.com</p>
+          <p>☎ (843) 319-5373 — Google screening process</p>
+        </div>
+      </div>
+
+      <form
+        class="reserve-form"
+        action="https://formspree.io/f/mwvjdqng"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New MANI Facility Reservation" />
+
+        <select name="reason_for_booking" required>
+          <option value="">Reason for booking</option>
+          <option value="Reserve implementation spot">Reserve implementation spot</option>
+          <option value="Request MANI demo">Request MANI demo</option>
+          <option value="Discuss facility pain points">Discuss facility pain points</option>
+          <option value="Commercial partnership inquiry">Commercial partnership inquiry</option>
+        </select>
+
+        <input name="name" placeholder="Full Name *" required />
+        <input name="company" placeholder="Company Name *" required />
+        <input name="role" placeholder="Current Role / Title" />
+        <input name="email" type="email" placeholder="Work Email *" required />
+        <input name="phone" placeholder="Phone Number" />
+        <input name="location" placeholder="Facility Location / City, State" />
+        <input name="employee_count" placeholder="Approx. Number of Employees" />
+        <input name="machine_count" placeholder="Approx. Number of Machines" />
+        <input name="systems" placeholder="Current Systems Used: ERP, MES, Quality, Maintenance, HR..." />
+
+        <div class="reserve-date-grid">
+          <label>
+            Desired Implementation Start
+            <input name="implementation_start" type="date" />
+          </label>
+
+          <label>
+            Desired Implementation End
+            <input name="implementation_end" type="date" />
+          </label>
+        </div>
+
+        <select name="best_contact_time">
+          <option value="">Best Time to Contact</option>
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
+          <option value="Evening">Evening</option>
+          <option value="Anytime">Anytime</option>
+        </select>
+
+        <select name="package_interest">
+          <option value="">Package Interest</option>
+          <option value="Starter Infrastructure">Starter Infrastructure</option>
+          <option value="Growth Platform">Growth Platform</option>
+          <option value="Enterprise Intelligence">Enterprise Intelligence</option>
+          <option value="Custom Deployment">Custom Deployment</option>
+          <option value="Not Sure Yet">Not Sure Yet</option>
+        </select>
+
+        <textarea
+          name="message"
+          placeholder="Number of machines, systems, package interest, implementation goals, and key challenges"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="submit">SUBMIT REQUEST</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
