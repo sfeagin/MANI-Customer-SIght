@@ -341,7 +341,7 @@ function Problem() {
                 <div className="accordion-top">
                   <Icon size={22}/>
                   <strong>{title}</strong>
-                  <span className="accordion-plus">{active ? '−' : '+'}</span>
+                  <span className="accordion-plus">{active ? 'ΓêÆ' : '+'}</span>
                 </div>
                 <div className="accordion-body">
                   <p>{copy}</p>
@@ -739,8 +739,8 @@ function StatValue({ value, label }) {
 
 function Proof() {
   const financialStats = [
-    ['-3% → +6%', 'EBITDA improvement in one year', 'Margin moved from negative to positive during pilot period.'],
-    ['$420K–$564K', 'annual tooling savings identified', 'Tooling usage became visible, comparable, and actionable.'],
+    ['-3% ΓåÆ +6%', 'EBITDA improvement in one year', 'Margin moved from negative to positive during pilot period.'],
+    ['$420KΓÇô$564K', 'annual tooling savings identified', 'Tooling usage became visible, comparable, and actionable.'],
     ['$1M+', 'scrap reduction opportunity identified', 'Quality losses translated into financial opportunity.']
   ];
 
@@ -803,32 +803,32 @@ function Platform() {
   const modules = [
     [
       'Operations Intelligence',
-      'Operations Command Center • Production Attainment & Loss • Supervisor Task Delegation • Shift Handoff • Production Floor Visualization',
+      'Operations Command Center ΓÇó Production Attainment & Loss ΓÇó Supervisor Task Delegation ΓÇó Shift Handoff ΓÇó Production Floor Visualization',
       Factory
     ],
     [
       'Engineering Intelligence',
-      'Engineering Task Center • Machine Story • Asset Intelligence • ROI Queue • Controls Analytics • Tooling Intelligence • Maintenance Work Orders • Engineering Supervisor Delegation',
+      'Engineering Task Center ΓÇó Machine Story ΓÇó Asset Intelligence ΓÇó ROI Queue ΓÇó Controls Analytics ΓÇó Tooling Intelligence ΓÇó Maintenance Work Orders ΓÇó Engineering Supervisor Delegation',
       Cpu
     ],
     [
       'Quality Intelligence',
-      'MPI Reporting • Tooling Statistics • Quality Analytics • Scrap & Rework Orchestration • Specification Management • Material Intelligence • EBITDA Exposure Analysis',
+      'MPI Reporting ΓÇó Tooling Statistics ΓÇó Quality Analytics ΓÇó Scrap & Rework Orchestration ΓÇó Specification Management ΓÇó Material Intelligence ΓÇó EBITDA Exposure Analysis',
       ClipboardCheck
     ],
     [
       'Logistics Intelligence',
-      'Warehouse Intelligence • Material Traceability • Inventory Optimization • Shipment Visibility • Demand Planning',
+      'Warehouse Intelligence ΓÇó Material Traceability ΓÇó Inventory Optimization ΓÇó Shipment Visibility ΓÇó Demand Planning',
       Truck
     ],
     [
       'Workforce Intelligence',
-      'Attendance Intelligence • Workforce Planning • Labor Impact Analytics • Hiring Pipeline • Payroll Readiness • Clock-In / Clock-Out • Training • Coverage Planning',
+      'Attendance Intelligence ΓÇó Workforce Planning ΓÇó Labor Impact Analytics ΓÇó Hiring Pipeline ΓÇó Payroll Readiness ΓÇó Clock-In / Clock-Out ΓÇó Training ΓÇó Coverage Planning',
       Users
     ],
     [
       'Executive Intelligence',
-      'Financial Impact Dashboard • EBITDA Monitoring • Risk Prioritization • Operational ROI Engine • Cross-Department Performance Intelligence',
+      'Financial Impact Dashboard ΓÇó EBITDA Monitoring ΓÇó Risk Prioritization ΓÇó Operational ROI Engine ΓÇó Cross-Department Performance Intelligence',
       TrendingUp
     ]
   ];
@@ -1031,7 +1031,7 @@ function WhoItsFor() {
       image: asset('plant leadership.jpg')
     },
     {
-      title: 'COO • CEO • CFO',
+      title: 'COO ΓÇó CEO ΓÇó CFO',
       copy: 'Track EBITDA impact, monitor operational risk, and delegate action across facilities.',
       image: asset('ceo.jpg')
     }
@@ -1067,7 +1067,7 @@ function WhoItsFor() {
           aria-label="Previous team"
           onClick={() => goToPersona('prev')}
         >
-          ‹
+          ΓÇ╣
         </button>
 
         <div className="persona-feature-card">
@@ -1089,7 +1089,7 @@ function WhoItsFor() {
           aria-label="Next team"
           onClick={() => goToPersona('next')}
         >
-          ›
+          ΓÇ║
         </button>
       </div>
 
@@ -1231,7 +1231,7 @@ function Contact() {
 
             <span>
               <Phone size={18}/>
-              (843) 319-5373 — Google screening process
+              (843) 319-5373 ΓÇö Google screening process
             </span>
           </div>
         </div>
@@ -1325,7 +1325,7 @@ function Footer() {
           <span>Operational Intelligence</span>
         </div>
       </div>
-      <p>© 2026 MANI Operational Intelligence. Manufacturing Automated Network Interface.</p>
+      <p>┬⌐ 2026 MANI Operational Intelligence. Manufacturing Automated Network Interface.</p>
     </footer>
   );
 }
