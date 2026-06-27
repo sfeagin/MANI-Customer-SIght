@@ -739,8 +739,8 @@ function StatValue({ value, label }) {
 
 function Proof() {
   const financialStats = [
-    ['-3% ΓåÆ +6%', 'EBITDA improvement in one year', 'Margin moved from negative to positive during pilot period.'],
-    ['$420KΓÇô$564K', 'annual tooling savings identified', 'Tooling usage became visible, comparable, and actionable.'],
+    ['-3% → +6%', 'EBITDA improvement in one year', 'Margin moved from negative to positive during pilot period.'],
+    ['$420K•$564K', 'annual tooling savings identified', 'Tooling usage became visible, comparable, and actionable.'],
     ['$1M+', 'scrap reduction opportunity identified', 'Quality losses translated into financial opportunity.']
   ];
 
@@ -1067,7 +1067,7 @@ function WhoItsFor() {
           aria-label="Previous team"
           onClick={() => goToPersona('prev')}
         >
-          ΓÇ╣
+          ‹
         </button>
 
         <div className="persona-feature-card">
@@ -1089,7 +1089,7 @@ function WhoItsFor() {
           aria-label="Next team"
           onClick={() => goToPersona('next')}
         >
-          ΓÇ║
+          ›
         </button>
       </div>
 
@@ -1231,7 +1231,7 @@ function Contact() {
 
             <span>
               <Phone size={18}/>
-              (843) 319-5373 ΓÇö Google screening process
+              (843) 319-5373 — Google screening process
             </span>
           </div>
         </div>
@@ -1325,7 +1325,7 @@ function Footer() {
           <span>Operational Intelligence</span>
         </div>
       </div>
-      <p>┬⌐ 2026 MANI Operational Intelligence. Manufacturing Automated Network Interface.</p>
+      <p>©2026 MANI Operational Intelligence. Manufacturing Automated Network Interface.</p>
     </footer>
   );
 }
