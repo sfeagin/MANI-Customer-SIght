@@ -803,32 +803,32 @@ function Platform() {
   const modules = [
     [
       'Operations Intelligence',
-      'Operations Command Center ΓÇó Production Attainment & Loss ΓÇó Supervisor Task Delegation ΓÇó Shift Handoff ΓÇó Production Floor Visualization',
+      'Operations Command Center • Production Attainment & Loss • Supervisor Task Delegation • Shift Handoff • Production Floor Visualization',
       Factory
     ],
     [
       'Engineering Intelligence',
-      'Engineering Task Center ΓÇó Machine Story ΓÇó Asset Intelligence ΓÇó ROI Queue ΓÇó Controls Analytics ΓÇó Tooling Intelligence ΓÇó Maintenance Work Orders ΓÇó Engineering Supervisor Delegation',
+      'Engineering Task Center • Machine Story • Asset Intelligence • ROI Queue • Controls Analytics • Tooling Intelligence • Maintenance Work Orders • Engineering Supervisor Delegation',
       Cpu
     ],
     [
       'Quality Intelligence',
-      'MPI Reporting ΓÇó Tooling Statistics ΓÇó Quality Analytics ΓÇó Scrap & Rework Orchestration ΓÇó Specification Management ΓÇó Material Intelligence ΓÇó EBITDA Exposure Analysis',
+      'MPI Reporting • Tooling Statistics • Quality Analytics • Scrap & Rework Orchestration •Specification Management • Material Intelligence • EBITDA Exposure Analysis',
       ClipboardCheck
     ],
     [
       'Logistics Intelligence',
-      'Warehouse Intelligence ΓÇó Material Traceability ΓÇó Inventory Optimization ΓÇó Shipment Visibility ΓÇó Demand Planning',
+      'Warehouse Intelligence • Material Traceability • Inventory Optimization • Shipment Visibility • Demand Planning',
       Truck
     ],
     [
       'Workforce Intelligence',
-      'Attendance Intelligence ΓÇó Workforce Planning ΓÇó Labor Impact Analytics ΓÇó Hiring Pipeline ΓÇó Payroll Readiness ΓÇó Clock-In / Clock-Out ΓÇó Training ΓÇó Coverage Planning',
+      'Attendance Intelligence • Workforce Planning • Labor Impact Analytics • Hiring Pipeline • Payroll Readiness • Clock-In / Clock-Out • Training • Coverage Planning',
       Users
     ],
     [
       'Executive Intelligence',
-      'Financial Impact Dashboard ΓÇó EBITDA Monitoring ΓÇó Risk Prioritization ΓÇó Operational ROI Engine ΓÇó Cross-Department Performance Intelligence',
+      'Financial Impact Dashboard • EBITDA Monitoring • Risk Prioritization • Operational ROI Engine • Cross-Department Performance Intelligence',
       TrendingUp
     ]
   ];
@@ -1031,7 +1031,7 @@ function WhoItsFor() {
       image: asset('plant leadership.jpg')
     },
     {
-      title: 'COO ΓÇó CEO ΓÇó CFO',
+      title: 'COO • CEO • CFO',
       copy: 'Track EBITDA impact, monitor operational risk, and delegate action across facilities.',
       image: asset('ceo.jpg')
     }
